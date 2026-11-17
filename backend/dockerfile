@@ -1,0 +1,23 @@
+# 1. Base Image (Node.js ka official image)
+FROM node:20-alpine
+
+# 2. Working Directory set karein
+WORKDIR /app
+
+# 3. Pehle package.json copy karein (taake cache use ho)
+COPY package*.json ./
+
+# 4. Dependencies install karein
+RUN npm install
+
+# 5. Baqi code copy karein
+COPY . .
+
+# 6. NestJS ko build karein
+RUN npm run build
+
+# 7. Port expose karein
+EXPOSE 3000
+
+# 8. Server start karein
+CMD ["npm", "run", "start:prod"]

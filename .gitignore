@@ -1,0 +1,25 @@
+# Dependencies (Bohot heavy hoti hain)
+node_modules/
+**/node_modules/
+
+# Environment variables (Secrets)
+.env
+**/.env
+
+# Build files
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/

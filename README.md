@@ -40,13 +40,8 @@ text
        ⬇                                     ⬇
 [ MongoDB Database ]                   [ Apache Kafka ]
 ⚙️ Getting Started
-bash
-# Clone the repository
-git clone https://github.com/your-username/groceryos.git
-cd groceryos
 
-# Start the full environment
-docker-compose up --build
+
 
 The app will be available at http://localhost:3000.
 
